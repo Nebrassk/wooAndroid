@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.update_Categories">
+
+    <EditText
+        android:id="@+id/nameUpdateCategory"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@android:drawable/edit_text"
+        android:ems="10"
+        android:hint="@string/category_name"
+        android:inputType="textPersonName" />
+
+    <Button
+
+        android:id="@+id/sendUpdateCategory"
+        android:layout_below="@id/nameUpdateCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update" />
+</RelativeLayout>

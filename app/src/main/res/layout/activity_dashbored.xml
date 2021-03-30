@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:scrollingCache="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/spacing_xxlarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_large">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:textColor="@color/grey_80"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_large" />
+
+        <LinearLayout
+            android:id="@+id/productLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <ImageButton
+                android:layout_width="@dimen/spacing_xmlarge"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:background="@android:color/transparent"
+                android:tint="@color/grey_60"
+                app:srcCompat="@drawable/ic_baseline_category_24" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/products"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey_80" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/categoriesLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <ImageButton
+                android:layout_width="@dimen/spacing_xmlarge"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:background="@android:color/transparent"
+                android:tint="@color/grey_60"
+                app:srcCompat="@drawable/ic_baseline_category_24" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/categories"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey_80" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

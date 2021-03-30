@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Woocommerce add Product</string>
+
+    <!--    Coupons-->
+    title_activity_add__category
+    <string name="title_activity_add__category">اضافة تصنيف جديد</string>
+    <string name="title_activity_settings">الاعدادات</string>
+    <string name="number_of_coupons">عدد الكوبونات</string>
+    <string name="price">السعر</string>
+    <string name="send">ارسال</string>
+    <string name="extract">استخراج</string>
+    <string name="brand_name">اسم البراند</string>
+    <string name="all_products">كل المنتجات</string>
+    <string name="settings">الاعدادات</string>
+    <string name="products">المنتجات</string>
+    <string name="categories">التصنيفات</string>
+    <string name="product_name">اسم المنتج</string>
+    <string name="description">الوصف</string>
+    <string name="select_brand">اختر براند</string>
+    <string name="select_category">اختر تصنيف</string>
+    <string name="update_categories">تحديث التصنيفات</string>
+    <string name="add_brands">اضافة براند</string>
+    <string name="add_category">اضافة تصنيف</string>
+    <string name="add_brand">اضافة كارت</string>
+    <string name="category">التصنيف</string>
+    <string name="colors">الالوان</string>
+    <string name="sizes">الاحجام</string>
+    <string name="count">العدد</string>
+    <string name="update_product_details">تحديث بيانات المنتج</string>
+    <string name="delete_product">حذف المنتج</string>
+    <string name="category_name">اسم التصنيف</string>
+    <string name="update">تحديث</string>
+    <string name="coupon">الكود</string>
+    <string name="copy">نسخ</string>
+    <string name="delete">حذف</string>
+    <string name="loading">يتم التحميل …</string>
+    <string name="progress_upload_product">يرجى الانتظار يتم رفع المنتج …</string>
+    <string name="add">اضافة</string>
+    <string name="cancel">الغاء</string>
+    <string name="yes">نعم</string>
+    <string name="Do_you_want_to_delete_this_product">هل تود حذف هذا المنتج؟</string>
+    <string name="please_add_info"> يرجى اضافة بيانات</string>
+    <string name="please_add_image"> يرجى اضافة صورة او الانتظار حتي يتم رفع الصور..</string>
+
+
+
+</resources>

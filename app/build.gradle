@@ -1,0 +1,124 @@
+apply plugin: 'com.android.application'
+//firebase
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+
+
+    //binding
+    buildFeatures {
+        viewBinding true
+    }
+    //for my phone
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'androidx.navigation:navigation-fragment:2.3.4'
+    implementation 'androidx.navigation:navigation-ui:2.3.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.okhttp3:okhttp:4.9.0"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    ///picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:26.4.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+
+    //facebook shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+
+    //fresco
+    implementation 'com.facebook.fresco:fresco:2.4.0'
+    //SpacingItemDecoration for recyclerview
+
+    //ViewModel
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.3.0"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.3.0"
+
+    //Rxjava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.x.x'
+    //Retrofit adapter Rxjava
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    //wysiwyg editor
+   // implementation 'jp.wasabeef:richeditor-android:2.0.0'
+   // implementation 'com.github.irshulx:laser-native-editor:3.0.3'
+   // implementation 'com.commonsware.cwac:richedit:0.5.3'
+   // implementation 'com.1gravity:android-rteditor:1.6.7'
+   // implementation 'com.github.noecivitillo:ToolText:v1.1.1'
+//    implementation 'com.github.trietphm:CustomEditor:v1.0.1'
+//    implementation 'com.github.noecivitillo:ToolText:v1.1.1'
+
+
+    //Export CVS file
+    implementation 'com.opencsv:opencsv:4.6'
+
+
+
+    // recyclerview paging library
+        def paging_version = "2.1.2"
+        implementation "androidx.paging:paging-runtime:$paging_version" // For Kotlin use paging-runtime-ktx
+        // optional - RxJava support
+        implementation "androidx.paging:paging-rxjava2:$paging_version" // For Kotlin use paging-rxjava2-ktx
+
+
+
+
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00CFCFCF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.main.MainActivity"
+    tools:openDrawer="start">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="#F2F4FF"
+        android:scrollingCache="true"
+        android:layout_marginTop="5dp"
+        app:layout_behavior="layout_behavior"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="16dp"
+        android:text="@string/all_products"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="#EFEFEF"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F4FF"
+        android:scrollbars="vertical"
+        android:scrollingCache="true"
+        app:layout_behavior="layout_behavior" />
+
+
+
+</LinearLayout>

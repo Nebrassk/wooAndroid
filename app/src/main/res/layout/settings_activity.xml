@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/baseUri"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="https://example.com"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/consumer_key"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="ck_8a00280c2c4dd296d549a67d88f2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/consumer_secret"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="cs_8dd8c5458e1ad4fe741c87827d4f"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update" />
+</LinearLayout>

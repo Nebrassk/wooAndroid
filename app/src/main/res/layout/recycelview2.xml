@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2FFE2"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="86dp"
+            android:layout_height="110dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="name"
+            android:textColor="#09BC10"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="24dp"
+            android:textColor="#8CC34C"
+            android:padding="2dp"
+            android:shadowColor="#4F0CC5"
+            android:text="12$"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+
+    </RelativeLayout>
+</LinearLayout>
